@@ -22,7 +22,7 @@ export default function Body() {
     <div className='container'>
     <button onClick={() => getPokemonData()}>Click me for Pokemon</button>
     <div style={{marginTop: '10px'}}>Pokemon: {pokemonData ? pokemonData.name : ''}</div>
-    <img src={pokemonData && pokemonData.sprites && pokemonData.sprites.front_default ? pokemonData.sprites.front_default : ''} alt="pokemon image" />
+    <img src={pokemonData && pokemonData.sprites && pokemonData.sprites.front_default ? pokemonData.sprites.front_default : ''} alt="pokemon" />
     </div>
   )
 }
